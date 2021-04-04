@@ -1,15 +1,12 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import HomeTemplate from "../components/templates/home";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <HomeTemplate
+      imgLink="https://www.w3schools.com/w3images/parallax1.jpg"
+      text="MY MANAGER"
+    />
+  );
+};
 
-export default IndexPage
+export default IndexPage;
