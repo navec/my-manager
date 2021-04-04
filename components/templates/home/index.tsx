@@ -18,6 +18,7 @@ const Index = ({ imgLink, text }: IndexProps) => {
         backgroundSize: "cover",
         opacity: "0.75",
       }}
+      withFooter={false}
     >
       <h1
         style={{

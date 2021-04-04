@@ -7,18 +7,20 @@ type Props = {
   children?: ReactNode;
   title?: string;
   style?: CSSProperties;
+  withFooter?: boolean;
 };
 
 const Layout = ({
   children,
   style,
   title = "This is the default title",
+  withFooter = true,
 }: Props) => (
   <div className="wrapper" style={style}>
     <Head title={title} />
     <Header />
     <article className="main">{children}</article>
-    <Footer />
+    {withFooter && <Footer />}
   </div>
 );
 
